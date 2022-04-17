@@ -1,20 +1,23 @@
 .clients {
     --card-item: 6;
+
+    &-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #afb1b8;
+        width: 100%;
+        height: 92px;
+        border: 1px solid currentColor;
+        border-radius: 4px;
+        transition: border var(--transition);
+
+       &:hover,
+       &:focus {
+         color: var(--accent-color);
+       }
+    }
 }
 
-.clients-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #afb1b8;
-    width: 100%;
-    height: 92px;
-    border: 1px solid currentColor;
-    border-radius: 4px;
-    transition: border var(--transition);
-}
 
-.clients-link:hover,
-.clients-link:focus {
-    color: var(--accent-color);
-}
+

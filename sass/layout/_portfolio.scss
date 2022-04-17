@@ -12,29 +12,32 @@
     border-radius: 4px;
     padding: 6px 22px;
     transition: color var(--transition), background-color var(--transition),
-        box-shadow var(--transition);
-}
+    box-shadow var(--transition);
 
-.projects-button:hover,
-.projects-button:focus,
+    &:hover,
+    &:focus, & {
+        color: var(--font-color-dark-theme);
+        background-color: var(--accent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    &-item:not(:last-child) {
+        margin-right: 8px;
+    }
+}
 .active-btn {
     color: var(--font-color-dark-theme);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
-.projects-buttons-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.projects-button-item:not(:last-child) {
-    margin-right: 8px;
-}
-
 .projects-item-titel {
     font-size: 18px;
     line-height: 2;
@@ -57,33 +60,30 @@
     overflow: auto;
     transform: translateY(100%);
     transition: transform var(--transition);
-}
 
+    .projects-link:hover &,
+    .projects-link:focus & {
+        transform: translateY(0%);
+    }
+}
 .prolects-wraper {
     position: relative;
     overflow: hidden;
 }
-
 .projects-description {
     font-size: 16px;
     line-height: 1.87;
 }
-
-.projects-link:hover,
-.projects-link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.projects-link:hover .projects-overlay,
-.projects-link:focus .projects-overlay {
-    transform: translateY(0%);
-}
-
 .projects-link {
     display: flex;
     flex-direction: column;
     transition: box-shadow var(--transition);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
 .img-description {

@@ -13,13 +13,15 @@
     padding: 0;
     cursor: pointer;
     transition: background-color var(--transition);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        fill: var(--font-color-dark-theme);
+    }
 }
 
-.modal-btn-close:hover,
-.modal-btn-close:focus {
-    background-color: var(--accent-color);
-    fill: var(--font-color-dark-theme);
-}
+
 
 .modal {
     position: absolute;
@@ -32,4 +34,8 @@
     transform: translate(-50%, -50%);
     transition: transform var(--transition);
     padding: 40px;
+
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(1.5) rotate(-45deg);
+    }
 }

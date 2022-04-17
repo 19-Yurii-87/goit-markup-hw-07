@@ -1,20 +1,14 @@
-.header-container {
-    display: flex;
-    align-items: center;
-}
-
-
-.header-nav-link:hover,
-.header-nav-link:focus,
-.current {
-    color: var(--accent-color);
-}
 
 .contact-list {
     display: flex;
     margin-left: auto;
-}
 
+    .header-nav-link {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+}
 .contact-link {
     font-weight: 500;
     font-size: 14px;
@@ -25,51 +19,55 @@
 
 .header {
     border: 1px solid #ececec;
-}
 
-.header-nav-list {
-    color: var(--main-font-color);
-    display: flex;
-}
+    &-container {
+        display: flex;
+        align-items: center;
+    }
+    &-nav-list {
+        color: var(--main-font-color);
+        display: flex;
+    }
+    &-nav-icon {
+        fill: currentColor;
+        margin-right: 10px;
+    }
+    &-nav-link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: block;
+        transition: color var(--transition);
+        position: relative;
 
-.header-nav-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: block;
-    transition: color var(--transition);
-    position: relative;
+        &:hover,
+        &:focus {
+            color: var(--accent-color)
+        }
+    }
 }
-
 .nav-list-item:not(:last-child) {
     margin-right: 50px;
+
+    .contact-list>& {
+        margin-right: 30px;
+    }
 }
 
-.contact-list .header-nav-link {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
+.current {
+    color: var(--accent-color);
 
-.contact-list>.nav-list-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.header-nav-icon {
-    fill: currentColor;
-    margin-right: 10px;
-}
-
-.current::after {
-    position: absolute;
-    bottom: -1px;
-    left: 0px;
-    width: 100%;
-    height: 4px;
-    content: "";
-    background-color: var(--accent-color);
-    border-radius: 2px;
+    &::after {
+        position: absolute;
+        bottom: -1px;
+        left: 0px;
+        width: 100%;
+        height: 4px;
+        content: "";
+        background-color: var(--accent-color);
+        border-radius: 2px;
+    }
 }

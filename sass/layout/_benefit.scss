@@ -1,27 +1,27 @@
-.benefit-item-title {
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: var(--main-font-color);
-    margin-bottom: 10px;
-}
 
 .card-set {
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(var(--card-gap) * -1);
     margin-left: calc(var(--card-gap) * -1);
-}
 
-.card-set-item {
-    flex-basis: calc(100% / var(--card-item) - var(--card-gap));
-    margin-top: var(--card-gap);
-    margin-left: var(--card-gap);
+    &-item {
+        flex-basis: calc(100% / var(--card-item) - var(--card-gap));
+        margin-top: var(--card-gap);
+        margin-left: var(--card-gap);
+    }
 }
-
 .benefit {
     padding-bottom: 0px;
     --card-item: 4;
+
+    &-item-title {
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--main-font-color);
+        margin-bottom: 10px;
+    }
 }
 
 .icon-background {

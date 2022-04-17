@@ -7,14 +7,17 @@
     letter-spacing: 0.03em;
     color: var(--accent-color);
     display: block;
+
+    >.logo-black {
+        color: var(--font-color-logo);
+    }
+    
+    >.logo-white {
+        color: var(--font-color-dark-theme);
+    }
+    
+    .header & {
+        margin-right: 94px;
+    }
 }
 
-.logo>.logo-black {
-    color: var(--font-color-logo);
-}
-.logo>.logo-white {
-    color: var(--font-color-dark-theme);
-}
-.header .logo {
-    margin-right: 94px;
-}
