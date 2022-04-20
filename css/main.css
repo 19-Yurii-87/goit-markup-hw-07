@@ -106,7 +106,7 @@ img {
   background-color: var(--model-btn-hover-color);
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -143,7 +143,7 @@ img {
   margin-right: 94px;
 }
 
-.social-link {
+.social-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,12 +154,12 @@ img {
   transition: color var(--transition), background-color var(--transition);
 }
 
-.social-link:hover, .social-link:focus {
+.social-list__link:hover, .social-list__link:focus {
   color: white;
   background-color: var(--accent-color);
 }
 
-.social-icon,
+.social-list__icon,
 .clients-icon {
   fill: currentColor;
 }
@@ -174,7 +174,7 @@ img {
   justify-content: space-between;
 }
 
-.social-item:not(:last-child) {
+.social-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -481,7 +481,7 @@ img {
   --card-item: 4;
 }
 
-.benefit-item-title {
+.benefit__item-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -580,16 +580,16 @@ img {
   align-items: baseline;
 }
 
-.footer .social-icon {
+.footer .social-list__icon {
   fill: var(--font-color-dark-theme);
 }
 
-.footer .social-link {
+.footer .social-list__link {
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
 }
 
-.footer .social-link:hover, .footer .social-link:focus {
+.footer .social-list__link:hover, .footer .social-list__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -620,24 +620,24 @@ img {
   font-style: inherit;
 }
 
-.address-link {
+.address__link {
   color: var(--font-color-address);
   transition: color var(--transition);
 }
 
-.address-link[target="_blank"] {
+.address__link[target="_blank"] {
   color: var(--font-color-dark-theme);
 }
 
-.address-link:hover, .address-link:focus {
+.address__link:hover, .address__link:focus {
   color: var(--accent-color);
 }
 
-.address-list-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.subscribe-form-input {
+.subscribe-form__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   width: 360px;
@@ -648,13 +648,13 @@ img {
   margin-right: 10px;
 }
 
-.subscribe-form-input::placeholder {
+.subscribe-form__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.icon-send {
+.model-btn__icon-send {
   margin-left: 10px;
 }
 
@@ -690,7 +690,7 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.projects-button-list {
+.projects-buttons-list {
   display: flex;
   align-items: center;
   justify-content: center;
