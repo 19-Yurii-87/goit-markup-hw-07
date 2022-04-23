@@ -3,7 +3,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    &-container {
+    &__container {
         display: flex;
         align-items: baseline;
     }
@@ -19,8 +19,7 @@
         &:focus {
             background-color: var(--accent-color);
         }
-    }
-    &-titel {
+    &__titel {
         color: var(--font-color-dark-theme);
         font-weight: 700;
         line-height: 1.14;
@@ -32,61 +31,56 @@
         align-items: center;
         justify-content: space-between;
     }
-    &-item:not(:last-child) {
+    &__item:not(:last-child) {
         margin-right: 70px;
     }
     
-    &-item:last-child {
+    &__item:last-child {
         margin-left: auto;
     }
-}
-.address {
-    display: flex;
-    font-style: inherit;
-
-    &-link {
-        color: var(--font-color-address);
-        transition: color var(--transition);
-
-        &[target="_blank"] {
-            color: var(--font-color-dark-theme);
+    .logo {
+        margin-bottom: 20px;
+    }
+    &__address {
+        display: flex;
+        font-style: inherit;
+    }
+    &__address-link {
+            color: var(--font-color-address);
+            transition: color var(--transition);
+    
+            &[target="_blank"] {
+                color: var(--font-color-dark-theme);
+            }
+    
+            &:hover,
+            &:focus {
+                color: var(--accent-color);
+            }
         }
-        
-        &:hover,
-        &:focus {
-            color: var(--accent-color);
+    
+    &__address-item:not(:last-child) {
+            margin-bottom: 9px;
         }
     }
-    &-list-item:not(:last-child) {
-        margin-bottom: 9px;
+    &__subscribe-form {
+        display: flex;
+        align-items: flex-end;
     }
-}
-
-.subscribe-form-input {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    width: 360px;
-    height: 50px;
-    background-color: transparent;
-    padding: 15px;
-    color: var(--font-color-dark-theme);
-    margin-right: 10px;
-
-    &::placeholder {
-        font-size: 16px;
-        line-height: 1.25;
-        color: rgba(255, 255, 255, 0.6);
-    }
-}
-.icon-send {
-    margin-left: 10px;
-}
-.subscribe-form {
-    display: flex;
-    align-items: flex-end;
-
-    &-wraper {
-        margin-right: 12px;
+    &__form-input {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
         width: 360px;
+        height: 50px;
+        background-color: transparent;
+        padding: 15px;
+        color: var(--font-color-dark-theme);
+        margin-right: 10px;
+    
+        &::placeholder {
+            font-size: 16px;
+            line-height: 1.25;
+            color: rgba(255, 255, 255, 0.6);
+        }
     }
 }

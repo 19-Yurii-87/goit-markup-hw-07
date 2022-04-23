@@ -1,7 +1,7 @@
 .clients {
     --card-item: 6;
 
-    &-link {
+    &__link {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -16,6 +16,9 @@
        &:focus {
          color: var(--accent-color);
        }
+    }
+    &-icon {
+    fill: currentColor;
     }
 }
 

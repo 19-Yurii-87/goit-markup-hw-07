@@ -1,35 +1,23 @@
 
-.card-set {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(var(--card-gap) * -1);
-    margin-left: calc(var(--card-gap) * -1);
-
-    &-item {
-        flex-basis: calc(100% / var(--card-item) - var(--card-gap));
-        margin-top: var(--card-gap);
-        margin-left: var(--card-gap);
-    }
-}
 .benefit {
     padding-bottom: 0px;
     --card-item: 4;
 
-    &-item-title {
+    &__item-title {
         font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
         color: var(--main-font-color);
         margin-bottom: 10px;
     }
+    &__icon-background {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        background-color: var(--secondary-background-color);
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
 }
 
-.icon-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-    background-color: var(--secondary-background-color);
-    border-radius: 4px;
-    margin-bottom: 30px;
-}

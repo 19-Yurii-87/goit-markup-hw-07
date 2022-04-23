@@ -6,4 +6,18 @@
             rgba(47, 48, 58, 0.4)),
         url(../img/background-img.jpg);
     background-size: cover;
+
+    &__title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--font-color-dark-theme);
+        max-width: 696px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
 }

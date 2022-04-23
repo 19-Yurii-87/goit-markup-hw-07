@@ -2,7 +2,7 @@
     background-color: var(--secondary-background-color);
     --card-item: 4;
 
-    &-item-title {
+    &__item-title {
         font-weight: 500;
         color: var(--main-font-color);
         margin-bottom: 10px;
@@ -11,14 +11,14 @@
         text-align: center;
     }
     
-    &-description {
+    &__description {
         margin-bottom: 16px;
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
     }
     
-    &-photo-description {
+    &__photo-description {
         background-color: var(--team-card-background-color);
         padding-top: 30px;
         padding-bottom: 30px;

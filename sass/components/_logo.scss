@@ -8,16 +8,11 @@
     color: var(--accent-color);
     display: block;
 
-    >.logo-black {
+    >.logo__font--black {
         color: var(--font-color-logo);
     }
     
-    >.logo-white {
+    >.logo__font--white {
         color: var(--font-color-dark-theme);
     }
-    
-    .header & {
-        margin-right: 94px;
-    }
 }
-
