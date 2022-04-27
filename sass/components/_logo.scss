@@ -8,11 +8,11 @@
     color: var(--accent-color);
     display: block;
 
-    >.logo__font--black {
+    &__font--black {
         color: var(--font-color-logo);
     }
     
-    >.logo__font--white {
+    &__font--white {
         color: var(--font-color-dark-theme);
     }
 }

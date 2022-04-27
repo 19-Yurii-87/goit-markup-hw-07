@@ -7,29 +7,12 @@
         display: flex;
         align-items: baseline;
     }
-
-    .social-list__icon {
-        fill: var(--font-color-dark-theme);
-    }
-    .social-list__link {
-        background-color: rgba(255, 255, 255, 0.1);
-        color: white;
-
-        &:hover,
-        &:focus {
-            background-color: var(--accent-color);
-        }
     &__titel {
         color: var(--font-color-dark-theme);
         font-weight: 700;
         line-height: 1.14;
         text-transform: uppercase;
         margin-bottom: 20px;
-    }
-    .model-btn {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
     &__item:not(:last-child) {
         margin-right: 70px;
@@ -62,7 +45,6 @@
     &__address-item:not(:last-child) {
             margin-bottom: 9px;
         }
-    }
     &__subscribe-form {
         display: flex;
         align-items: flex-end;
@@ -82,5 +64,19 @@
             line-height: 1.25;
             color: rgba(255, 255, 255, 0.6);
         }
+    }
+    .social-list__link {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
+    }
+    .model-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }

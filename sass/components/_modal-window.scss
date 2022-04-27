@@ -76,6 +76,13 @@
             outline: none;
             border-color: var(--accent-color);
         }
+        &:focus+.modal__input-icon {
+            fill: var(--accent-color);
+        }
+        &:hover+.modal__input-icon {
+            fill: var(--accent-color);
+        }
+
     }
     &__input-icon {
         position: absolute;
@@ -83,14 +90,6 @@
         left: 12px;
         transform: translateY(-50%);
         transition: fill var(--transition);
-    
-        .contact-form-input:focus+& {
-            fill: var(--accent-color);
-        }
-    
-        .contact-form-input:hover+& {
-            fill: var(--accent-color);
-        }
     }
     &__form-comments {
         resize: none;
@@ -148,12 +147,12 @@
                 border-color: var(--accent-color);
             }
         }
-        &__icon-check {
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: translateY(30%);
-            z-index: 100;
-        }
+    }
+    &__icon-check {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(30%);
+        z-index: 100;
     }
 }
